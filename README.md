@@ -1,14 +1,21 @@
 # 김대영 | Backend Developer
 
-Java와 Spring Boot를 중심으로 백엔드 개발을 공부하고 있습니다.  
+Java와 Spring Boot를 중심으로 백엔드 시스템을 개발하고 있습니다.  
 기능 구현을 넘어 동시성, 데이터 정합성, 메시징, 장애 대응과 같은
 실제 서비스의 문제를 이해하고 해결하는 데 관심이 있습니다.
 
 ## Tech Stack
 
+**Backend**
 - Java, Spring Boot, Spring Security, JPA
-- MySQL, Redis
-- Kafka
+
+**Database & Messaging**
+- MySQL, Redis, Kafka
+
+**Frontend**
+- React, TypeScript, Next.js
+
+**Infra**
 - Docker, AWS, GitHub Actions
 
 ## Projects
