@@ -9,7 +9,8 @@
 ## Tech Stack
 
 **Backend**
-- Java, Spring Boot, Spring Security, JPA
+- ![Static Badge](https://img.shields.io/badge/java-orange)
+, Spring Boot, Spring Security, JPA
 
 **Database & Messaging**
 - MySQL, Redis, Kafka
