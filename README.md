@@ -1,8 +1,11 @@
 # 김대영 | Backend Developer
 
+제가 가진 기술로 사람들의 하루에 더 많은 웃음을 더하는 개발자를 지향합니다.
+
 Java와 Spring Boot를 중심으로 백엔드 시스템을 개발하고 있습니다.  
-기능 구현을 넘어 동시성, 데이터 정합성, 메시징, 장애 대응과 같은
-실제 서비스의 문제를 이해하고 해결하는 데 관심이 있습니다.
+단순히 기능을 구현하는 것을 넘어, 실제 사용자가 안정적으로 사용할 수 있는 서비스를 만드는 데 관심이 있습니다.
+
+이를 위해 동시성, 데이터 정합성, 메시징, 장애 대응과 같은 실제 서비스에서 발생할 수 있는 문제를 고민하고 해결하며 백엔드 개발 역량을 쌓아가고 있습니다.
 
 ## Tech Stack
 
@@ -34,9 +37,9 @@ Java와 Spring Boot를 중심으로 백엔드 시스템을 개발하고 있습�
 ### JWT Token Revocation under Storage Failure
 Redis 기반 JWT 폐기 검증 시스템의 장애 대응 전략 비교 연구
 
-- Fail-Open / Fail-Closed
-- DB Fallback / DB Verification
-- Redis 장애 및 Redis-MySQL 불일치 시나리오
+- Fail-Open / Fail-Closed 전략 비교
+- DB Fallback / DB Verification 전략 구현
+- Redis 장애 및 Redis-MySQL 불일치 시나리오 검증
 - k6 기반 성능·보안성·가용성 비교 실험
 
 [Repository](https://github.com/eodud9/jwt-revocation-research)
