@@ -24,23 +24,40 @@
 
 ## Projects
 
-### ResourceHub
-공유 자원 예약 및 관리 서비스
+### 1. ResourceHub
+**공유 자원 예약 및 관리 백엔드 시스템**
 
-- 비관적 락을 활용한 예약 동시성 제어
-- Redis Cache-Aside 및 캐시 정합성 처리
-- Kafka 기반 비동기 이벤트 처리
-- Transactional Outbox Pattern
-- AWS 배포 및 CI/CD 구축
+- Spring Security와 JWT 기반 인증·인가 구현
+- 비관적 락을 통한 예약 동시성 제어
+- Redis Cache-Aside 및 트랜잭션 커밋 이후 캐시 무효화
+- Kafka, Transactional Outbox, Consumer 멱등성 및 Retry/DLT 구현
+- Docker와 AWS 기반 배포 및 GitHub Actions CI/CD 구성
 
-[Repository](https://github.com/eodud9/resource-hub)
+**Tech Stack:** Java, Spring Boot, MySQL, Redis, Kafka, Docker, AWS
 
-### JWT Token Revocation under Storage Failure
-Redis 기반 JWT 폐기 검증 시스템의 장애 대응 전략 비교 연구
+[GitHub Repository](https://github.com/eodud9/resource-hub)
 
-- Fail-Open / Fail-Closed 전략 비교
-- DB Fallback / DB Verification 전략 구현
-- Redis 장애 및 Redis-MySQL 불일치 시나리오 검증
-- k6 기반 성능·보안성·가용성 비교 실험
+### 2. JWT Revocation Research
+**Redis 기반 JWT 폐기 검증의 장애 대응 및 데이터 일관성 비교 연구**
 
-[Repository](https://github.com/eodud9/jwt-revocation-research)
+- Fail-Open, Fail-Closed, DB Fallback, DB Verification 전략 설계·구현
+- Redis 장애와 Redis–MySQL 불일치 상황을 구분한 E1~E4 실험 수행
+- Redis 장애 시 DB Fallback으로 정상 토큰 요청 성공률 100%, 폐기 토큰 오허용률 0% 관찰
+- DB Verification으로 데이터 불일치 시 폐기 토큰 오허용률 0% 달성, 성능 비용 정량 분석
+
+**Tech Stack:** Java, Spring Boot, MySQL, Redis, Docker, k6
+
+[GitHub Repository](https://github.com/eodud9/jwt-revocation-research)
+
+### 3. Connected Vehicle Backend Platform
+**차량 데이터 수집 및 운행 상태 관리를 위한 백엔드 플랫폼 — 개발 진행 중**
+
+- 차량별 API Key 인증과 사용자 JWT 인증 체계 분리
+- Telemetry 수집 및 최신 차량 상태 조회
+- 시동 상태 변화에 따른 운행 세션 관리
+- 배터리·온도·주행 이상 이벤트 처리
+- 향후 부하 측정과 병목 분석을 바탕으로 아키텍처 개선 예정
+
+**Tech Stack:** Java, Spring Boot, Spring Security, JPA, MySQL
+
+[GitHub Repository](https://github.com/eodud9/connected-vehicle-platform)
