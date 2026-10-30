@@ -61,3 +61,15 @@
 **Tech Stack:** Java, Spring Boot, Spring Security, JPA, MySQL
 
 [GitHub Repository](https://github.com/eodud9/connected-vehicle-platform)
+
+### 4. Visual Posture Manager
+**MediaPipe 기반 실시간 자세 모니터링 서비스 — 팀 프로젝트**
+
+- React 기반 프론트엔드 및 사용자 인터페이스 개발
+- JavaScript와 MediaPipe를 활용한 자세 랜드마크 추출 및 개인별 캘리브레이션 로직 구현
+- FastAPI 백엔드와 REST API·WebSocket 연동 및 실시간 분석 결과 표시
+- 프로젝트 기능 통합 및 오류 디버깅, 카메라 원본 영상의 지속 저장을 지양하는 설계 논의 참여
+
+**Tech Stack:** JavaScript, React, MediaPipe, FastAPI, WebSocket
+
+[GitHub Repository](https://github.com/eodud9/visual-posture-manager)
